@@ -1,0 +1,49 @@
+@import './normalize.css';
+
+@font-face {
+    font-family: "Avenir Next";
+    src: local("Avenir Next Regular"),
+        local("AvenirNext-Regular"),
+        url("./fonts/AvenirNextCyr-Regular.woff2") format("woff2"),
+        url("./fonts/AvenirNextCyr-Regular.woff") format("woff"),
+        url("./fonts/AvenirNextCyr-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Avenir Next";
+    src: local("Avenir Next Regular"),
+        local("AvenirNext-Regular"),
+        url("./fonts/AvenirNextCyr-Bold.woff2") format("woff2"),
+        url("./fonts/AvenirNextCyr-Bold.woff") format("woff"),
+        url("./fonts/AvenirNextCyr-Bold.ttf") format("ttf");
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    font-family: "Avenir Next";
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.main {
+    display: flex;
+    max-width: 1600px;
+    padding: 10px;
+}
+
+@media screen and (width<=920px) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+}
+
+
+
