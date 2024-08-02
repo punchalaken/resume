@@ -67,6 +67,12 @@ export const useMainInformationStore = defineStore('mainInformation', () => {
             place: 'ГБУЗ Ленинградская областная клиническая больница, Санкт-Петербург.',
             skillArray: ['Доврачебная медицинская помощь', 'Руководство младшим мед. персоналом', 'Организация ухода за больным']
         },
+        secondJob: {
+            Name: 'Фриланс',
+            Date: 'Октябрь 2023 - Настоящее время',
+            place: 'Санкт-Петербург',
+            skillArray: ['Реализовывал frontend на vue3 composition api', 'Реализовывал типизацию на TypeScript']
+        },
     })
 
     const myEducationObject = ref<MyEducationObject>({

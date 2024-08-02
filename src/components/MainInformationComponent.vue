@@ -24,8 +24,10 @@ import { useMainInformationStore } from '@/stores/MainInformationStore';
             <MainInformationAbout :text="useMainInformationStore().$state.myDescription"/>
             
             <div class="main-information__skills">
-
-                <MainInformationJob :job-object="useMainInformationStore().$state.myJobInformation" />
+                <div class="main-information__job">
+                    <MainInformationJob :job-object="useMainInformationStore().$state.myJobInformation" />
+                </div>
+                
 
                 <div class="main-information__progress"> 
 
@@ -79,6 +81,12 @@ import { useMainInformationStore } from '@/stores/MainInformationStore';
 
         @media screen and (width<=650px) {
             flex-direction: column;
+        }
+
+        .main-information__job{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
         }
     }
 
