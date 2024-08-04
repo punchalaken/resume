@@ -63,13 +63,13 @@ export const useMainInformationStore = defineStore('mainInformation', () => {
     const myJobInformation = ref<MyJobInformation>({
         firstJob: {
             Name: 'Медицинский брат',
-            Date: 'Апрель 2019 - Октябрь 2023',
+            Date: 'Апрель 2019 - Март 2023',
             place: 'ГБУЗ Ленинградская областная клиническая больница, Санкт-Петербург.',
             skillArray: ['Доврачебная медицинская помощь', 'Руководство младшим мед. персоналом', 'Организация ухода за больным']
         },
         secondJob: {
             Name: 'Фриланс',
-            Date: 'Октябрь 2023 - Настоящее время',
+            Date: 'Июль 2023 - Настоящее время',
             place: 'Санкт-Петербург',
             skillArray: ['Реализовывал frontend на vue3 composition api', 'Реализовывал типизацию на TypeScript']
         },
